@@ -15,12 +15,13 @@
     "react-tap-event-plugin": "^3.0.3",
     "redux": "^4.0.0",
     "redux-form": "^7.3.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "serve": "^9.2.0"
   },
-  "scripts": {
+  "scripts": { 
     "setup-server:": "cd server && npm install",
     "dev": "concurrently \"react-scripts start\" \"cd server && npm run dev\"",
-    "start": "concurrently \"react-scripts start\" \"cd server && npm run start\"",
+    "start": "concurrently \"serve ./build -s -p ${PORT:-3000}\" \"cd server && npm run start\"",
     "_start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

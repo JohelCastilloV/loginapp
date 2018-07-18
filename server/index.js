@@ -7,9 +7,7 @@ const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
 const cors = require('cors');
-console.log(process.env.MONGO_URI)
-const url_mongodb="mongodb+srv://johel:johel123@cluster0-jsxx9.mongodb.net/auth"||'mongodb://localhost:27017/auth';
-console.log("que paso"+url_mongodb)
+const url_mongodb=process.env.MONGO_URI||'mongodb://localhost:27017/auth';
 process.on('unhandledRejection', error => {
     // Will print "unhandledRejection err is not defined"
     console.log('unhandledRejection',error.message);
