@@ -9,7 +9,7 @@ Simple Login App
 * Authenticated with Json Web Token
 * Bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-👀 [See the application](https://login-app-fwezmuslgb.now.sh)
+👀 [See the application](https://login-app.now.sh)
 
 ## Scripts
 
